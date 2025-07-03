@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 // Definition for singly-linked list.
@@ -32,3 +32,41 @@ public:
         return h1;
     }
 };
+
+int main()
+{
+    // Test the solution
+    Solution solution;
+
+    // Create a test linked list: 1 -> 2 -> 3 -> 4 -> 5
+    ListNode *head = new ListNode(1);
+    head->next = new ListNode(2);
+    head->next->next = new ListNode(3);
+    head->next->next->next = new ListNode(4);
+    head->next->next->next->next = new ListNode(5);
+
+    // Print original list
+    cout << "Original: ";
+    ListNode *temp = head;
+    while (temp)
+    {
+        cout << temp->val << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+
+    // Reverse the list
+    ListNode *reversed = solution.reverseList(head);
+
+    // Print reversed list
+    cout << "Reversed: ";
+    temp = reversed;
+    while (temp)
+    {
+        cout << temp->val << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+
+    return 0;
+}
