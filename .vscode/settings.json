@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "**/*.exe": true,
+        "**/*.o": true,
+        "**/*.obj": true,
+        "**/*.out": true,
+        "**/*.app": true
+    }
+}
