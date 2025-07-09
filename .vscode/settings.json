@@ -5,5 +5,8 @@
         "**/*.obj": true,
         "**/*.out": true,
         "**/*.app": true
+    },
+    "files.associations": {
+        "vector": "cpp"
     }
 }
