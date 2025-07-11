@@ -8,7 +8,7 @@ class Solution
 public:
     int firstUniqChar(string s)
     {
-        int n = s.length();
+        int n = s.size();
         int freq[26] = {0};
 
         for (char c : s)
