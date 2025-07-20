@@ -53,8 +53,8 @@ void topView(Node *root)
             q.push({curr.first->right, curr.second + 1});
         }
 
-        if (m.find(curr.second) == m.end())
-        {
+        if (m.find(curr.second) == m.end())//just this one line change and
+        {                                  //you can make bottom view from top view
             m[curr.second] = curr.first->val;
         }
     }
