@@ -42,6 +42,15 @@ void printInorder(TreeNode *root)
     printInorder(root->right);
 }
 
+void printPostorder(TreeNode *root)
+{
+    if (!root)
+        return;
+    printPostorder(root->left);
+    printPostorder(root->right);
+    cout << root->val << " ";
+}
+
 class Solution
 {
 public:
